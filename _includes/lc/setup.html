@@ -432,6 +432,132 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
     this to work you will need an up-to-date browser.
   </p>
 
+  <p>
+    There are <strong>two ways</strong> to get Python and JupyterLab ready for
+    this workshop:
+  </p>
+  <ul>
+    <li>
+      <strong>Option A &ndash; run it in your browser (no installation).</strong>
+      Use the Jupyter4NFDI Hub via the launch button in the course repository.
+      See the expandable box directly below.
+    </li>
+    <li>
+      <strong>Option B &ndash; install locally with Miniforge/conda.</strong>
+      Follow the two-step local installation further down.
+    </li>
+  </ul>
+
+  <details>
+    <summary><strong>Option A: Start Jupyter notebooks via the Jupyter4NFDI Hub (no installation)</strong></summary>
+    <div class="alert alert-info">
+      <p>
+        This is an <strong>alternative to the local installation</strong> of
+        Miniforge/conda. You do <strong>not need to install anything</strong>
+        &ndash; everything runs in your web browser. You start directly via the
+        <strong>launch button in the course repository</strong>, which
+        automatically builds the correct environment with all required packages.
+      </p>
+      <p>
+        <strong>Requirements:</strong> an up-to-date browser and a login
+        (institutional account <strong>or</strong> ORCID).
+      </p>
+
+      <div class="alert alert-warning">
+        <strong>Login note</strong>
+        <p>
+          Authentication goes through the <strong>NFDI Infrastructure Proxy</strong>
+          (backed by <strong>Helmholtz ID</strong>). You can select your
+          institution or &ndash; if it is not listed &ndash; sign in via
+          <strong>ORCID</strong>. If you are not affiliated with an NFDI community
+          or are unsure, choose <strong>"Guest Access"</strong>.
+        </p>
+      </div>
+
+      <h5>1. (Only if needed) Prepare an ORCID</h5>
+      <p>
+        If you <strong>cannot</strong> log in via your institution, register a
+        free ORCID account in advance:
+        <a href="https://orcid.org/register">Register an ORCID account</a> &middot;
+        <a href="https://orcid.org/">More about ORCID</a>.
+        If you can log in via your institution, skip this step.
+      </p>
+
+      <h5>2. Start the environment via the launch button</h5>
+      <ol>
+        <li>Open the course repository: <a href="https://github.com/RabeaMue/2026-12-04-ZK_FDM_Modul_4_Jupyter_Notebooks">Workshop repository (GitHub)</a>.</li>
+        <li>In the README, under <strong>"Umgebung starten" (Start environment)</strong>, click the launch button (the <strong>"Jupyter4NFDI"</strong> badge).</li>
+      </ol>
+      <p>
+        This automatically creates a JupyterLab environment on the Jupyter4NFDI
+        Hub with the correct packages (incl. numpy, pandas, matplotlib, seaborn,
+        plotly, plotnine). The notebooks are already included &ndash; nothing to
+        load manually.
+      </p>
+
+      <h5>3. Authentication (NFDI Infrastructure Proxy)</h5>
+      <ol>
+        <li>You are redirected to the login. The page states: <em>If your NFDI community is not listed or you are unsure which one applies to you, please select "Guest Access".</em></li>
+        <li>Select a <strong>consortium / community</strong> &ndash; <strong>or "Guest Access"</strong> if unsure.</li>
+        <li>Then select <strong>your institution</strong>. If it is not listed, choose <strong>ORCID</strong>.</li>
+      </ol>
+
+      <h5>4. Sign in with ORCID</h5>
+      <p>On the <strong>"Sign in to ORCID"</strong> page:</p>
+      <ul>
+        <li>Field <strong>"Email or ORCID iD"</strong> &ndash; e.g. <code>name@institution.edu</code> or <code>0000-1234-5678-9101</code></li>
+        <li>Enter your <strong>password</strong></li>
+        <li>No ORCID iD yet? Create one via <strong>"Register now"</strong>.</li>
+      </ul>
+
+      <h5>5. Helmholtz ID: registration &amp; email confirmation (first-time sign-up only)</h5>
+      <p>
+        On your <strong>very first</strong> login you are also registered with the
+        <strong>Helmholtz ID</strong>. The flow:
+      </p>
+      <ol>
+        <li><strong>Accept the data transfer</strong> from ORCID to Helmholtz ID.</li>
+        <li><strong>"Register at Helmholtz ID"</strong>: check your name and email address, accept the AAI usage policies, and click <strong>"Submit"</strong>.</li>
+        <li>You receive an <strong>email from Helmholtz ID</strong>. Open it (check your <strong>spam folder</strong> if needed) and click the <strong>confirmation link</strong>.</li>
+        <li>After confirming, your account is created. <strong>Because the original login was interrupted, you need to restart the login</strong> &ndash; i.e. click the launch button from step 2 again, or sign in again.</li>
+      </ol>
+      <p>
+        <strong>Note:</strong> Email confirmation is <strong>skipped</strong> if
+        you register with an account from a <strong>German university or research
+        centre</strong>. It mainly applies to signing in via <strong>ORCID</strong>
+        (or non-German institutions). This step is also only needed the
+        <strong>very first time</strong>.
+      </p>
+
+      <h5>6. The server starts automatically</h5>
+      <p>After a successful login you land on the hub's start page:</p>
+      <ul>
+        <li><em>"Your server is starting up. You will be redirected automatically when it's ready for you."</em></li>
+        <li>The overview shows your configuration, e.g. <strong>System: deNBI-Cloud</strong> (Credits: 120 / 120 per day), <strong>Binder Configuration</strong> / <em>Direct Link via Repo2Docker</em>.</li>
+        <li><strong>On the first launch the environment is built</strong> &ndash; this can take a few minutes. Afterwards <strong>JupyterLab</strong> opens automatically.</li>
+        <li>You can adjust your configuration or create a new one via the configuration page.</li>
+      </ul>
+
+      <h5>7. Working in JupyterLab</h5>
+      <ol>
+        <li>In the <strong>file browser</strong> (left), find the folder with the notebooks (e.g. <code>notebooks/</code>).</li>
+        <li>Double-click the notebook you want, e.g. <code>Python_Basics.ipynb</code>.</li>
+        <li>Run cells with <strong>Shift + Enter</strong>.</li>
+      </ol>
+
+      <h5>Useful links</h5>
+      <ul>
+        <li><a href="https://orcid.org/">ORCID</a> &middot; <a href="https://orcid.org/register">Register an ORCID account</a></li>
+        <li><a href="https://doc.nfdi-aai.de/infraproxy/">NFDI Infrastructure Proxy (info)</a></li>
+        <li><a href="https://hub.nfdi-jupyter.de/hub/login?next=%2Fhub%2Fhome">Jupyter4NFDI Hub</a></li>
+        <li><a href="https://github.com/RabeaMue/2026-12-04-ZK_FDM_Modul_4_Jupyter_Notebooks">Workshop repository (GitHub)</a></li>
+        <li><a href="https://github.com/RabeaMue/2026-12-04-ZK_FDM_Modul_4_Jupyter_Notebooks/blob/main/notebooks/Python_Basics.ipynb">Python Basics notebook</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <p><strong>Option B: Local installation with Miniforge/conda</strong></p>
+
   <div class="alert alert-info">
     <strong>Two installation steps at a glance</strong>
     <p>The installation consists of two parts:</p>
